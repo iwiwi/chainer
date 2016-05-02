@@ -13,6 +13,7 @@ from chainer.links.connection import inceptionbn
 from chainer.links.connection import linear
 from chainer.links.connection import lstm
 from chainer.links.connection import mlp_convolution_2d
+from chainer.links.connection import n_step_lstm
 from chainer.links.connection import parameter
 from chainer.links.connection import scale
 from chainer.links.loss import hierarchical_softmax
@@ -37,6 +38,7 @@ Linear = linear.Linear
 LSTM = lstm.LSTM
 StatelessLSTM = lstm.StatelessLSTM
 MLPConvolution2D = mlp_convolution_2d.MLPConvolution2D
+NStepLSTM = n_step_lstm.NStepLSTM
 Parameter = parameter.Parameter
 Scale = scale.Scale
 
