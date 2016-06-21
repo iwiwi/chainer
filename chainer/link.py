@@ -88,6 +88,7 @@ class Link(object):
         name (str): Name of this link, given by the parent chain (if exists).
 
     """
+
     def __init__(self, **params):
         self._params = []
         self._persistent = []
@@ -412,6 +413,7 @@ class Chain(Link):
             also set to the links.
 
     """
+
     def __init__(self, **links):
         super(Chain, self).__init__()
         self._children = []
@@ -564,6 +566,7 @@ class ChainList(Link):
         links: Initial child links.
 
     """
+
     def __init__(self, *links):
         super(ChainList, self).__init__()
         self._children = []
